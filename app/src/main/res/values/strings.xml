@@ -1,0 +1,41 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Blood Sugar Converter App</string>
+
+    <!-- Exercise Options -->
+    <string-array name="exercise_options">
+        <item>Walking</item>
+        <item>Swimming</item>
+        <item>Jogging</item>
+        <item>Cycling</item>
+    </string-array>
+
+    <!-- Unit Options -->
+    <string-array name="unit_options">
+        <item>mg/dL</item>
+        <item>mmol/L</item>
+    </string-array>
+
+    <!-- Hints and UI Labels -->
+    <string name="hint_name">Type Your Name</string>
+    <string name="hint_age">Type Your Age</string>
+    <string name="hint_sugar_value">Type Sugar Value</string>
+    <string name="load_website">Load the website</string>
+    <string name="convert">Convert</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+
+    <!-- Result Activity Strings -->
+    <string name="not_specified">Not specified</string>
+    <string name="none">None</string>
+    <string name="result_greeting">Hello, %1$s!</string> <!-- Placeholder for name -->
+    <string name="result_gender">Gender: %1$s</string>  <!-- Placeholder for gender -->
+    <string name="result_age">Age: %1$d</string>        <!-- Placeholder for age (integer) -->
+    <string name="result_blood_sugar">Blood Sugar: %1$.1f</string> <!-- Placeholder for blood sugar (float) -->
+    <string name="result_exercise">Exercise: %1$s</string> <!-- Placeholder for exercise -->
+    <string name="url_not_valid">The URL provided is not valid.</string>
+    <string name="url_diabetes_action">https://www.diabetesaction.org/</string> <!-- URL -->
+
+    <!-- Added Blood Sugar Unit Label -->
+    <string name="blood_sugar_unit_label">Blood Sugar Level (mg/dL)</string>
+</resources>

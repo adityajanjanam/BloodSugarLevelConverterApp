@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:padding="16dp"
+        android:layout_marginVertical="8dp"/>
+
+    <!-- Gender Selection -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_male"
+            android:padding="16dp"
+            android:layout_margin="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_female"
+            android:padding="16dp"
+            android:layout_margin="8dp"/>
+    </RadioGroup>
+
+    <!-- Age Input -->
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_age"
+        android:inputType="number"
+        android:autofillHints="age"
+        android:padding="16dp"
+        android:layout_marginVertical="8dp"/>
+
+    <!-- Blood Sugar Unit Selection -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blood_sugar_unit_label"
+        android:padding="16dp"
+        android:layout_marginVertical="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginVertical="8dp"
+        android:entries="@array/unit_options"/>
+
+    <!-- Blood Sugar Value Input -->
+    <EditText
+        android:id="@+id/editTextBloodSugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_sugar_value"
+        android:inputType="numberDecimal"
+        android:autofillHints="sugar"
+        android:padding="16dp"
+        android:layout_marginVertical="8dp"/>
+
+    <!-- Exercise Selection -->
+    <Spinner
+        android:id="@+id/spinnerExercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginVertical="8dp"
+        android:entries="@array/exercise_options"/>
+
+    <!-- Checkbox to Load Website -->
+    <CheckBox
+        android:id="@+id/checkBoxLoadWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load_website"
+        android:padding="16dp"
+        android:layout_marginVertical="8dp"/>
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:padding="8dp"
+        android:layout_marginVertical="8dp"/>
+</LinearLayout>
